@@ -17,7 +17,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 // JPA annotation
 @Entity                 //DB Table과 링크될 클래스, 기본적으로 카멜케이스(Class) -> 언더스코어 네이밍(Table)으로 매칭
-public class Posts extends BaseTimeEntity {    // ex>SalesManager.java -> sales_manager table
+public class Posts extends BaseTimeEntity {    // ex> SalesManager.java -> sales_manager table
 
     @Id // PK필드
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK의 생성 규칙
